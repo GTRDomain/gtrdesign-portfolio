@@ -1,49 +1,103 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding-top: 60px; /* space for sticky header */
-    background: #f9f9f9;
+    padding: 0;
+    background-color: #f9f9f9;
     color: #333;
   }
   
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
   .sticky-header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #0366d6;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
   
   nav {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 15px 20px;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    padding: 15px;
   }
   
   nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
   }
   
   nav a.active {
-    background-color: white;
     color: #0366d6;
   }
   
+  /* Main Content */
   main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+    padding: 80px 20px 20px;
   }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Projects Grid */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project h2 {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .project p {
+    padding: 0 15px 15px;
+    font-size: 1rem;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
   
