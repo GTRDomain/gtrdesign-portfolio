@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* space for sticky header */
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0366d6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  nav {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  nav a.active {
+    background-color: white;
+    color: #0366d6;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
